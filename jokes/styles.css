@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Press Start 2P";
+}
+
+#container {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 15% 75% 15%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#container h1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 0;
+    grid-row-end: 1;
+}
+
+#jokeSetup {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#jokePunchline {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#previous {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#next {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+
+
+
+
+

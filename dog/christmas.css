@@ -1,0 +1,35 @@
+
+@keyframes snowflake-fall {
+    from {
+        top: -10%;
+    }
+    to {
+        top: 100vh;
+    }
+}
+
+@keyframes snowflake-sway {
+    from {
+        transform: translateX(-40px);
+    }
+    50% {
+        transform: translateX(40px);
+    }
+    to {
+        transform: translateX(-40px);
+    }
+}
+
+.snowflake {
+    animation-name: snowflake-fall, snowflake-sway;
+    animation-duration: 10s, 4s;
+    animation-iteration-count: infinite, infinite;
+    animation-timing-function: linear, ease-in-out;
+
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    position: fixed;
+    top: -10%;
+    user-select: none;
+}

@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{SERVER_PORT} !^27500$
+    RewriteRule ^(?!phpmyadmin\/).* http://%{SERVER_NAME}:27500/$1 [P]
+</IfModule>

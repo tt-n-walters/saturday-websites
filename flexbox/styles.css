@@ -1,0 +1,51 @@
+.panel {
+    background-color: yellow;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 10px black, 0 0 3px black;
+    font-size: 50pt;
+    font-family: "Amatic SC";
+    
+    display: flex;
+    flex-direction: column;
+
+    transition: flex 1s cubic-bezier(0.59,-0.16, 0.37, 1.16);
+}
+
+.panel.open {
+    flex: 4;
+}
+
+body {
+    margin: 0;
+}
+
+.panel:nth-child(1) {
+    background-image: url("1.jpg");
+}
+.panel:nth-child(2) {
+    background-image: url("2.jpg");
+}
+.panel:nth-child(3) {
+    background-image: url("3.jpg");
+}
+.panel:nth-child(4) {
+    background-image: url("4.jpg");
+}
+.panel:nth-child(5) {
+    background-image: url("5.jpg");
+}
+
+#panels {
+    display: flex;
+    height: 100vh
+}
+
+.panel > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
